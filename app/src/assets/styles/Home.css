@@ -1,10 +1,20 @@
 .home-container {
-  min-height: 200vh; 
-  background: linear-gradient(135deg, #19202d, #1a114c); 
+  min-height:400vh; 
+  background: linear-gradient(135deg, #0F1217FF, #1a114c); 
   color: white;
   padding:0px;
   margin:0px;
+  justify-content: center;
+  align-items: center;
 }
-
-
+.image-intro{
+  width: 60%;
+  height: 60%;
+  margin-left:20%;
+  
+}
+.home-hr{
+  width: 50%;
+  margin-left:25%;
+}
 

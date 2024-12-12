@@ -9,13 +9,35 @@
 }
 
 .welcome-text {
-  max-width: 50%; 
+  max-width: 50%;
+  margin:6%; 
+  animation: fadeInUp 1s ease-in-out; 
 }
-
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .welcome-text h1 {
+  /* ... your existing styles ... */
+  overflow: hidden; /* Hide overflowing text */
+  border-right: .15em solid #a3b2ce; /* Add a subtle right border */
+  white-space: nowrap; /* Prevent text wrapping */
+  width: 0; /* Initially hide the text */
+  animation: typing 4s  forwards infinite; 
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: #a3b2ce;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 55%; } 
 }
 
 .welcome-text p {
@@ -25,12 +47,13 @@
 }
 
 .get-started-btn {
-  padding: 10px 20px;
-  background-color: #00d4ff;
-  color: #002b80;
+  padding: 13px 23px;
+  background-color: #CCCDF9FF;
+  color: #190242FF;
   border: none;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -41,7 +64,8 @@
 
 /* تحجيم الصورة على الجهة اليمنى */
 .welcome-image img {
-  width: 60%;
+  width: 100%;
+  height: 100%;
   max-width: 500px; /* تحدد الحجم الأقصى للصورة */
   border-radius: 10px;
   object-fit: cover;

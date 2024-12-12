@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react';
 import '../assets/styles/Home.css'; 
 import Header from '../components/Header';
@@ -7,6 +8,7 @@ import Slider from '../components/3DSlider';
 import Services from'./Services';
 import Footer from '../components/Footer';
 import SnakeCursor from '../components/3DSnakeCursor';
+import ImageIntro from '../assets/images/image1.png';
 const Home = () => {
   return (
     <>
@@ -17,9 +19,11 @@ const Home = () => {
       <SnakeCursor/>
       <Header/>
       <Introduction/>
+       <img src={ImageIntro} alt="image Intro 1" className="image-intro"></img>
       <About/>
       <hr className="home-hr"/>  {/* This is a horizontal line */}
      <Slider/>
+      <hr className="home-hr"/>
      <Services/>
      <Footer/>
     </div>

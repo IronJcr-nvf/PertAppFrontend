@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/styles/About.css';
-import aboutImage from '../assets/images/welcome_image.png'; 
+import aboutImage from '../assets/images/welcome-image.jpeg'; 
 import { FaArrowRight } from 'react-icons/fa'; 
 
 const About = () => {

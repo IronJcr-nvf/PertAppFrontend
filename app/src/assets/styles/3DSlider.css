@@ -9,7 +9,18 @@
   margin: 0 auto;         /* Center the entire body horizontally */
   padding: 0;             /* Remove unnecessary padding */
 }
-
+.sliderTitle {
+  text-align: center;
+  margin-top: 10%;
+}
+.sliderTitle h1{
+  font-size: 3em;
+  color: #fff;
+}
+.sliderTitle h5{
+  font-size: 1.2em;
+  color: #fff;
+}
 #ground {
   width: 90vw; /* Responsive width */
   height: 90vw; /* Responsive height */
@@ -20,7 +31,7 @@
   background: radial-gradient(
     center center,
     farthest-side,
-    rgba(253, 252, 252, 0.2),
+    rgba(165, 155, 155, 0.2),
     transparent
   );
 }
@@ -49,7 +60,7 @@
 #drag-container img,
 #drag-container video {
   position: absolute;
-  top: 50%;              /* Center vertically */
+  top: 15%;              /* Center vertically */
   left: 50%;             /* Center horizontally */
   transform: translate(-50%, -50%) preserve-3d; /* Center and keep 3D */
   width: 10vw;          /* Responsive width */
@@ -87,23 +98,29 @@ img:hover {
   width: 90%; /* More flexible width */
   max-width: 400px; /* Limits width for larger screens */
   padding: 20px;
-  background: #222;
-  color: #fff;
+  background: #c1c1c1;
+  color: #1b1b1b;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow-y: auto;
-  border-left: 2px solid #333; /* Divider between slider and content */
+  font-size: 1.2em;
+  font-weight: 800;
+  margin-bottom: 18%;
+  margin-right: 7%;
+  border-left: 2px solid #dbd6d6; /* Divider between slider and content */
+  border-radius: 20px;
 }
 
 .content-box {
   text-align: left;
+
 }
 
 .content-box h3 {
-  margin-bottom: 10px;
-  color: #f90;
+  margin-bottom: 20%;
+  color: rgb(14, 16, 35);
 }
 
 .content-box p {

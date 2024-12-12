@@ -1,47 +1,66 @@
-.footerBody{
-    background-color:#032357FF;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    border-top-left-radius: 63%;
-    margin-top:10%;
+/* Reset for container layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.footerBody {
-  background: linear-gradient(to right, #3B4688FF, #16295BFF); /* Subtle gradient */
-  padding: 20px 0;
+/* Ensures the page layout includes the footer at the bottom */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
 }
 
 .container {
-  max-width: 960px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.social-links {
-  list-style: none;
-  display: flex;
-}
-
-.social-links li {
-  margin-left: 10px;
-}
-
-.social-links li a {
-  color: #333;
-  text-decoration: none;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
+/* Wrapper to ensure footer stays at the bottom */
+.footerBody {
+    background-color: #032357FF;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-  }
+    position: relative;
+    border-top-left-radius: 63%;
+}
 
-  .row {
-    margin-bottom: 20px;
-  }
+.footerBody .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footerBody a {
+    color: #ffa500;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+.footerBody a:hover {
+    color: #ffffff;
+}
+
+/* Text alignment for responsiveness */
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .footerBody .row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .text-left, .text-right {
+        text-align: center;
+    }
 }

@@ -1,7 +1,9 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState, useEffect } from 'react';
 import SignUp from "./SignUp";
 import Sign from "./SignIn";
 import '../assets/styles/Header.css';
+import Logo from '../assets/images/image.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -45,7 +47,10 @@ const Header = () => {
   return (
     <>
       <header className="header">
-        <div className="logo">PertApp</div>
+        <div className="logo">
+          <img src={Logo} alt="logo image" className="logo-image">
+          </img>
+          PertApp</div>
         <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
           <ul className="nav-links">
             <li><a href="#home">Home</a></li>

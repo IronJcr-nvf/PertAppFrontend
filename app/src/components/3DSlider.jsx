@@ -9,12 +9,12 @@ const Slider = () => {
   const [isPaused, setIsPaused] = useState(false); // حالة للتحكم في الأنيميشن
 
   const images = [
-    { src: ImageTrain, content: "Content for Image 1" },
-    { src: ImageTrain, content: "Content for Image 2" },
-    { src: ImageTrain, content: "Content for Image 3" },
-    { src: ImageTrain, content: "Content for Image 4" },
-    { src: ImageTrain, content: "Content for Image 5" },
-    { src: ImageTrain, content: "Content for Image 6" },
+    { src: ImageTrain, content: "Roumaissa" },
+    { src: ImageTrain, content: "FATIMA" },
+    { src: ImageTrain, content: "AYOUB" },
+    { src: ImageTrain, content: "MALEK" },
+    { src: ImageTrain, content: "SIRIN" },
+    { src: ImageTrain, content: "PROF" },
   ];
 
   useEffect(() => {
@@ -41,14 +41,18 @@ const Slider = () => {
 
   const handleMouseEnter = (content) => {
     setSelectedContent(content);
-    setIsPaused(true); // توقف الأنيميشن
-  };
+    setIsPaused(true); 
+   };
 
   const handleMouseLeave = () => {
-    setIsPaused(false); // تشغيل الأنيميشن
-  };
+    setIsPaused(false);  };
 
   return (
+    <>
+    <div className="sliderTitle">
+      <h1>Team Members</h1>
+      <h4>Let's Talk About Us Somthing emm who are we?</h4>
+    </div>
     <div className="sliderbody">
       <div id="drag-container" ref={dragContainerRef}>
         <div id="spin-container" ref={spinContainerRef}>
@@ -77,7 +81,7 @@ const Slider = () => {
       </div>
       
     </div>
-
+</>
   );
 };
 
