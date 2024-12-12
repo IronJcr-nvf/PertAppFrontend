@@ -1,0 +1,67 @@
+
+
+.welcome-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 20px;
+  margin:40px;
+}
+
+.welcome-text {
+  max-width: 50%; 
+}
+
+.welcome-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #a3b2ce;
+}
+
+.welcome-text p {
+  font-size: 1.2rem;
+  color: #e2ddf4;
+  margin-bottom: 30px;
+}
+
+.get-started-btn {
+  padding: 10px 20px;
+  background-color: #00d4ff;
+  color: #002b80;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.get-started-btn:hover {
+  background-color: #009edc;
+}
+
+/* تحجيم الصورة على الجهة اليمنى */
+.welcome-image img {
+  width: 60%;
+  max-width: 500px; /* تحدد الحجم الأقصى للصورة */
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* responsive design */
+@media (max-width: 768px) {
+  .welcome-section {
+    flex-direction: column;
+    text-align: center;
+
+  }
+
+  .welcome-text {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .welcome-image img {
+    width: 100%;
+    max-width: 100%;
+  }
+}

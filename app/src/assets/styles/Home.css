@@ -1,0 +1,10 @@
+.home-container {
+  min-height: 200vh; 
+  background: linear-gradient(135deg, #19202d, #1a114c); 
+  color: white;
+  padding:0px;
+  margin:0px;
+}
+
+
+
