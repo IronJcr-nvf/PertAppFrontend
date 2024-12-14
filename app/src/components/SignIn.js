@@ -8,6 +8,9 @@
         
          <div className="sign-content">
     <div className="imageContent">
+        <h1> Pert App For Your Business</h1>
+        <br></br><br></br>
+        <br></br>
         <img src={ImageContent} alt="Image 1" />
     </div>
     <div className="form-content">

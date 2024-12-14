@@ -5,7 +5,8 @@
       flex-direction: row;
       width: 100%;
       height: 100%;
-      margin: auto;
+      margin:0;
+      padding:0;
       background: #fff;
       border-radius: 12px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -18,6 +19,11 @@
       align-items: center;
       justify-content: center;
       background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      text-align: center;
+      flex-direction: column;
+      color:#333;
   }
 
   .imageContent img {
@@ -25,8 +31,12 @@
       max-height: 100%;
       object-fit:fill;
   }
-
+.imageContent img:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
   .form-content {
+    border-top-left-radius: 15px;
       width:65%;
       padding: 2rem;
       display: flex;
