@@ -1,19 +1,6 @@
-/* Reset for container layout */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Ensures the page layout includes the footer at the bottom */
-html, body {
-    height: 100%;
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-}
 
 .container {
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -26,6 +13,9 @@ html, body {
     text-align: center;
     position: relative;
     border-top-right-radius: 63%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    overflow: hidden;
 }
 
 .footerBody .row {
