@@ -2,6 +2,8 @@
 import React from "react";
 import '../assets/styles/Card.css'; // Ensure you import the CSS file
 import ChartImage from '../assets/images/chartt.webp';
+import verificationImage from '..//assets/images/verification_iwnfmj.webp';
+import hide_chat_egk7h4Image from '..//assets/images/hide_chat_egk7h4.webp'; 
 function Card() {
   return (
     <section className="grid md:grid-cols-3 gap-6 max-md:max-w-xs mx-auto">
@@ -25,7 +27,7 @@ function Card() {
           />
           <img
             className="card-image card-image-hover"
-            src={ChartImage}
+            src={verificationImage}
             alt="Card image 01 displaying on hover"
             width={350}
             height={240}
@@ -46,7 +48,7 @@ function Card() {
         <div className="card-images">
           <img
             className="card-image card-image-main"
-            src={ChartImage}
+            src={hide_chat_egk7h4Image}
             alt="Card image 01"
             width={350}
             height={240}
