@@ -19,7 +19,7 @@ const Home = () => {
       <SnakeCursor/>
       <Header/>
       <Introduction/>
-       <img src={ImageIntro} alt="image Intro 1" className="image-intro"></img>
+       
       <About/>
       <hr className="home-hr"/>  {/* This is a horizontal line */}
      <Slider/>

@@ -183,7 +183,7 @@ header {
 /* Modal */
 .modal {
   background: white;
-  width:90%;
+  width:70%;
   height: 100%;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
