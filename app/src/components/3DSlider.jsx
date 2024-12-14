@@ -9,12 +9,12 @@ const Slider = () => {
   const [isPaused, setIsPaused] = useState(false); // حالة للتحكم في الأنيميشن
 
   const images = [
-    { src: ImageTrain, content: "Roumaissa" },
-    { src: ImageTrain, content: "FATIMA" },
-    { src: ImageTrain, content: "AYOUB" },
-    { src: ImageTrain, content: "MALEK" },
-    { src: ImageTrain, content: "SIRIN" },
-    { src: ImageTrain, content: "PROF" },
+    { src: ImageTrain, content: "Roumaissa GHRIBALLAH" },
+    { src: ImageTrain, content: "FATIMA ZOHRA" },
+    { src: ImageTrain, content: "AYOUB HADJ HENNI" },
+    { src: ImageTrain, content: "MALEK " },
+    { src: ImageTrain, content: "SIRIN SEHABI" },
+    { src: ImageTrain, content: "PROF BLA BLA" },
   ];
 
   useEffect(() => {

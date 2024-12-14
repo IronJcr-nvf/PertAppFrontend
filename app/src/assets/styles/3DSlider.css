@@ -106,9 +106,9 @@ img:hover {
   align-items: center;
   overflow-y: auto;
   font-size: 1.2em;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 18%;
-  margin-right: 7%;
+  margin-right: 15%;
   border-left: 2px solid #dbd6d6; /* Divider between slider and content */
   border-radius: 20px;
 }

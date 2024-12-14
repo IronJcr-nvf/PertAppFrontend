@@ -127,7 +127,7 @@ header {
     display: none;
     flex-direction: column;
     align-items: flex-start;
-    background-color: #002b80;
+    background-color: #1A1B32FF;
     position: absolute;
     top: 60px;
     right: 20px;
@@ -155,6 +155,7 @@ header {
     justify-content: space-between;
     display:block;
     flex-direction: column;
+    align-items: center;
   }
 
   .sign-up-btn,

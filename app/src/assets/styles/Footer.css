@@ -20,12 +20,12 @@ html, body {
 
 /* Wrapper to ensure footer stays at the bottom */
 .footerBody {
-    background-color: #032357FF;
+    background:linear-gradient(to right, #252DA0FF,rgb(83, 81, 192));
     color: #fff;
     padding: 20px 0;
     text-align: center;
     position: relative;
-    border-top-left-radius: 63%;
+    border-top-right-radius: 63%;
 }
 
 .footerBody .row {
