@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState, useEffect } from 'react';
-import SignUp from "./SignUp";
+import Login from "./Login";
 import Sign from "./SignIn";
 import '../assets/styles/Header.css';
 import Logo from '../assets/images/image.png';
@@ -76,7 +76,7 @@ const Header = () => {
       {isModalUpOpen && (
         <div className="modal-backdrop" onClick={closeModalUp}>
           <div className="modal" onClick={(e) => e.stopPropagation()}>
-            <SignUp/>
+            <Login/>
             <button className="close-btn" onClick={closeModalUp}>Close</button>
           </div>
         </div>

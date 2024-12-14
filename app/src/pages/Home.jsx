@@ -8,7 +8,7 @@ import Slider from '../components/3DSlider';
 import Services from'./Services';
 import Footer from '../components/Footer';
 import SnakeCursor from '../components/3DSnakeCursor';
-import ImageIntro from '../assets/images/image1.png';
+
 const Home = () => {
   return (
     <>
